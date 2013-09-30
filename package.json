@@ -3,10 +3,6 @@
   "description": "",
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
   "version": "0.1.0",
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bebraw/grunt-adapter.git"
