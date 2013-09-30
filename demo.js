@@ -2,4 +2,4 @@
 var gruntPlugin = require('./grunt-plugin');
 var execute = require('./index');
 
-execute(gruntPlugin);
+execute(gruntPlugin, {a: 'custom'});

@@ -1,11 +1,18 @@
-function main(plugin) {
+var extend = require('util')._extend;
+
+
+function main(plugin, options) {
+    options = options || {};
+
     var executable;
     var proxy = {
-        options: id,
+        options: function(a) {
+            return extend(a, options);
+        },
         async: function() {
             return function(success) {
                 if(success === false)  console.error('Failed to execute plugin!');
-            }
+            };
         }
     };
 
@@ -23,5 +30,3 @@ function main(plugin) {
     executable.call(proxy);
 }
 module.exports = main;
-
-function id(a) {return a;}

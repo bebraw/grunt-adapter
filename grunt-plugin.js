@@ -7,7 +7,7 @@ module.exports = function GruntPlugin(grunt) {
     });
     var done = this.async();
 
-    grunt.log.writeln('testing');
+    grunt.log.writeln('testing. options.a: ' + options.a);
 
     done(options.success == 'ok');
   });
